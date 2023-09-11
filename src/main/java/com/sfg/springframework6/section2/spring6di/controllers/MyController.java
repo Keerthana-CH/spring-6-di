@@ -11,7 +11,7 @@ public class MyController {
 
     // GOAL: Using the classes without using dependency Injection
     // (because the GreetingServiceImpl has not annotated with @Service)
-    // So we are creating an insrance of GSImpl not as "this.greetingService =GreetingService greetingService"
+    // So we are creating an instance of GSImpl not as "this.greetingService = GreetingService greetingService"
     // in the constructor.
     // ************ For more understanding compare with the springboot-web-new repositories ************
     public MyController() {
