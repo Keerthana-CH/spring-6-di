@@ -10,7 +10,6 @@ public class ProfilesController {
 
     private final GreetingService greetingService;
 
-    @Autowired
     public ProfilesController(@Qualifier("profile") GreetingService greetingService) {
         this.greetingService = greetingService;
     }

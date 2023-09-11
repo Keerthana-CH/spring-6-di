@@ -7,7 +7,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@ActiveProfiles("profile1")
+//@ActiveProfiles("profile1")
 @SpringBootTest
 class ProfilesControllerTest1 {
 
