@@ -4,7 +4,7 @@ import com.sfg.springframework6.section2.spring6di.services.GreetingService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-@Profile("profile1")
+@Profile({"profile1","default"})
 @Service("profile")
 public class profile1 implements GreetingService {
     @Override

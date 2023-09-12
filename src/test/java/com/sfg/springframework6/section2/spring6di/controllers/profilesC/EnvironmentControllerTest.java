@@ -6,16 +6,15 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
 import static org.junit.jupiter.api.Assertions.*;
-
-//@ActiveProfiles("profile1")
+@ActiveProfiles({"uat","profile1"})
 @SpringBootTest
-class ProfilesControllerTest1 {
+class EnvironmentControllerTest {
 
     @Autowired
-    ProfilesController profilesController;
-
+    EnvironmentController environmentController;
     @Test
-    void sayHello() {
-        System.out.println(profilesController.sayHello());
+    void getEnv() {
+        System.out.println(environmentController.getEnv());
+
     }
 }
